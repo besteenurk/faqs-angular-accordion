@@ -1,0 +1,66 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.basic-container {
+  padding: 30px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+.mat-expansion-panel-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 24px;
+  border-radius: inherit
+}
+
+.mat-expansion-panel-header:focus, .mat-expansion-panel-header:hover {
+  outline: 0
+}
+
+.mat-expansion-panel-header.mat-expanded:focus, .mat-expansion-panel-header.mat-expanded:hover {
+  background: inherit
+}
+
+.mat-expansion-panel-header:not([aria-disabled=true]) {
+  cursor: pointer
+}
+
+.mat-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  overflow: hidden
+}
+
+.mat-expansion-panel-header-description, .mat-expansion-panel-header-title {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 16px
+}
+
+[dir=rtl] .mat-expansion-panel-header-description, [dir=rtl] .mat-expansion-panel-header-title {
+  margin-right: 0;
+  margin-left: 16px
+}
+
+.mat-expansion-panel-header-description {
+  flex-grow: 2
+}
+
+.mat-expansion-indicator::after {
+  border: none;
+  content: '';
+  display: inline-block;
+  padding: 0;
+  transform: rotate(45deg);
+  vertical-align: middle
+}
